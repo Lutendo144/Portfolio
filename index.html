@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lutendo Netshirando | Profile</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- About Section -->
+    <section class="about fade-in">
+        <img src="Profilepic.jpg" alt="Profile Photo" class="profile-pic" />
+        <h1>Hello, I'm <span class="highlight">Lutendo Netshirando</span></h1>
+        <p class="about-text">
+            I'm an IT professional focused on software development, cloud systems, and innovation.
+            <br><br>
+            Enthusiastic and committed individual with a passion for software development and information technology.
+            Demonstrates quick adaptation, teamwork, and proactive responsibility-taking. Possesses strong
+            problem-solving and communication abilities developed through coursework and extracurricular activities.
+            <br><br>
+            Eager to share knowledge and skills with a creative team and gain practical experience in software
+            engineering or development.
+        </p>
+        <a href="more.html" class="btn">More About Me</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:Lutendo144@gmail.com">Lutendo144@gmail.com</a></p>
+
+        <div class="social-links">
+            <a href="https://github.com/Lutendo144" target="_blank">
+                <img src="icons/icons8-github-50.png" alt="GitHub Icon" class="icon" />
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lutendo-netshirando-1684a6227" target="_blank">
+                <img src="icons/icons8-linkedin-30.png" alt="LinkedIn Icon" class="icon" />
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lutendo Netshirando</p>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        faders.forEach(fadeEl => {
+            appearOnScroll.observe(fadeEl);
+        });
+    </script>
+</body>
+
+</html>

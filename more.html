@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More About Me | Lutendo Netshirando</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="more-about">
+    <h1><span class="highlight">More About Me</span></h1>
+    <p class="intro-text">
+        Welcome to my detailed profile. Here you can explore my skills, view my CV,
+         view certificates I have earned, and
+        browse through my projects.
+    </p>
+  
+<div class="circle-buttons">
+    <a href="skills.html" class="circle-btn">Skills</a>
+    <a href="cv.html" class="circle-btn">CV</a>
+    <a href="certificates.html" class="circle-btn">Certificates</a>
+    <a href="projects.html" class="circle-btn">Projects</a>
+     <a href="languages.html" class="circle-btn">languages</a>
+</div>
+
+
+  
+    <!-- Back button -->
+    <a href="index.html" class="btn back-btn">← Back to Home</a>
+  </section>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    faders.forEach(fadeEl => {
+      appearOnScroll.observe(fadeEl);
+    });
+  </script>
+</body>
+</html>

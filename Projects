@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Lutendo Netshirando</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="projects-wrapper">
+    <h1><span class="highlight">Projects</span></h1>
+    <p class="intro-text">Explore some of my featured software projects below.</p>
+
+    <div class="project-card">
+      <h2>Agri-Energy Connect</h2>
+      <p>A web platform empowering farmers with tools for sustainable farming, energy trading, education, and collaboration.</p>
+      <div class="buttons">
+        <a href="readmes/agri-energy-readme.pdf" target="_blank" class="btn">📄 View README</a>
+        <a href="https://github.com/Lutendo144/agri-energy-connect" target="_blank" class="btn">🔗 GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>International Payment Portal</h2>
+      <p>A secure React and ASP.NET Core system for international customer payments with role-based access, validations, and token auth.</p>
+      <div class="buttons">
+        <a href="readmes/payment-portal-readme.pdf" target="_blank" class="btn">📄 View README</a>
+        <a href="https://github.com/Lutendo144/payment-portal" target="_blank" class="btn">🔗 GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>Banking App (MVC + Face Recognition)</h2>
+      <p>A C# MVC application integrating facial recognition as a 2FA method, designed for secure digital banking access.</p>
+      <div class="buttons">
+        <a href="readmes/banking-app-readme.pdf" target="_blank" class="btn">📄 View README</a>
+        <a href="https://github.com/Lutendo144/banking-app" target="_blank" class="btn">🔗 GitHub Repo</a>
+      </div>
+    </div>
+
+    <a href="more.html" class="btn back-btn">← Back</a>
+  </section>
+</body>
+
+</html>
